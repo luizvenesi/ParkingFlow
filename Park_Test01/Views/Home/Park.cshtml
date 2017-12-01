@@ -1,0 +1,88 @@
+﻿
+@{
+    ViewBag.Title = "Park";
+}
+
+<script>
+function toggleClass(el){
+    if (el.className == "btn btn-success btn-lg") {
+        
+	} else {
+        el.className = "btn btn-success btn-lg";
+	}
+}
+</script>
+<div class="jumbotron">
+    <h1>Smart Park</h1>
+    <p class="lead">Intelligent Vehicle Location System </p>
+
+</div>
+
+<div class="row">
+    <h2>Start Flow</h2>
+    <div class="col col-md-10 alert alert-success" role="alert">
+        <div class="col-md-2 text-center">
+                <input class="btn btn-warning btn-lg disabled" type="button" value="BMW-2016" onclick="toggleClass(this)"><br />
+            <span class="setor">Date</span>
+        </div>
+        <div class="col-md-2 text-center">
+            <input class="btn btn-default btn-lg" type="button" value="BMW-2016" onclick="toggleClass(this)"><br />
+            <span class="setor">Request</span>
+        </div>
+        <div class="col-md-2 text-center">
+            <input class="btn btn-default btn-lg disabled" type="button" value="BMW-2016" onclick="toggleClass(this)"><br />
+            <span class="setor">Pick Up</span>
+        </div>
+        <div class="col-md-5 col-md-offset-1">
+            <span class="ticket">Ticket: 20160909832</span><br />
+            <span class="ticket">Parking: 30/05/2016 10:03</span><br />
+        </div>
+  </div>
+    </div>
+    <div class="row">
+        <h2>Request Car</h2>
+        <div class="col col-md-10 alert alert-success" role="alert">
+            <div class="col-md-2 text-center">
+                <input class="btn btn-warning btn-lg disabled" type="button" value="BMW-2016" onclick="toggleClass(this)"><br />
+                <span class="setor">Parking</span>
+            </div>
+            <div class="col-md-2 text-center">
+                <input class="btn btn-success btn-lg disabled" type="button" value="BMW-2016" onclick="toggleClass(this)"><br />
+                <span class="setor">Request</span>
+            </div>
+            <div class="col-md-2 text-center">
+                <input class="btn btn-default btn-lg disabled" type="button" value="BMW-2016" onclick="toggleClass(this)"><br />
+                <span class="setor">Pick Up</span>
+            </div>
+            <div class="col-md-5 col-md-offset-1">
+                <span class="ticket">Ticket: 20160909832</span><br />
+                <span class="ticket">Parking: 30/05/2016 10:03</span><br />
+                <span class="ticketsolicitado">Request: 30/05/2016 12:05</span><br />
+            </div>
+        </div>
+    </div>
+<div class="row">
+    <h2>Car Released to Customer</h2>
+    <div class="col col-md-10 alert alert-success" role="alert">
+        <div class="col-md-2 text-center">
+            <input class="btn btn-warning btn-lg disabled" type="button" value="BMW-2016" onclick="toggleClass(this)"><br />
+            <span class="setor">Parking</span>
+        </div>
+        <div class="col-md-2 text-center">
+            <input class="btn btn-success btn-lg disabled" type="button" value="BMW-2016" onclick="toggleClass(this)"><br />
+            <span class="setor">Request</span>
+        </div>
+        <div class="col-md-2 text-center">
+            <input class="btn btn-primary btn-lg disabled" type="button" value="BMW-2016" onclick="toggleClass(this)"><br />
+            <span class="setor">Pick Up</span>
+        </div>
+        <div class="col-md-5 col-md-offset-1">
+            <span class="ticket">Ticket: 20160909832</span><br />
+            <span class="ticket">Parking: 30/05/2016 10:03</span><br />
+            <span class="ticket">Request: 30/05/2016 12:05</span><br />
+            <span class="ticketentregue">Pick Up: 30/05/2016 12:10</span><br />
+        </div>
+    </div>
+</div>
+
+

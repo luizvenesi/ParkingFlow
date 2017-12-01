@@ -1,0 +1,207 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<script>
+function toggleClass(el){
+    if (el.className == "btn btn-success btn-lg") {
+        el.className = "btn btn-default btn-lg";
+	} else {
+        el.className = "btn btn-success btn-lg";
+	}
+}
+</script>
+<div class="jumbotron">
+    <h1>Smart Park</h1>
+    <p class="lead">Intelligent Vehicle Location System </p>
+    
+</div>
+
+<div class="row">
+    <h2>First Floor</h2>
+    <div class="col col-md-8">
+        <div class="col-md-10 alert alert-success" role="alert">
+           @* <h4>Setor A</h4>*@
+            <p>
+                <input class="btn btn-success btn-lg" type="button" value="01" onclick="toggleClass(this)">
+                <input class="btn btn-warning btn-lg" type="button" value="02" onclick="toggleClass(this)">
+                <input class="btn btn-danger btn-lg" type="button" value="03" >
+                <input class="btn btn-default btn-lg" type="button" value="04" onclick="toggleClass(this)">
+                <input class="btn btn-default btn-lg" type="button" value="05" onclick="toggleClass(this)">
+                <input class="btn btn-default btn-lg" type="button" value="06" onclick="toggleClass(this)">
+                <input class="btn btn-default btn-lg" type="button" value="07" onclick="toggleClass(this)">
+                <input class="btn btn-default btn-lg" type="button" value="08" onclick="toggleClass(this)">
+                <input class="btn btn-default btn-lg" type="button" value="09" onclick="toggleClass(this)">
+                <input class="btn btn-default btn-lg" type="button" value="10" onclick="toggleClass(this)">
+                
+            </p>
+            <span class="setor">Sector A</span>
+            <span class="glyphicon glyphicon-arrow-right text-center "></span>
+           
+    </div>
+
+        <div class="col-md-10 alert alert-success" role="alert">
+            @*<h4>Sector B</h4>*@
+            <span class="setor">Sector B</span>
+            <span class="glyphicon glyphicon-arrow-right text-center "></span><br />
+            <span class="glyphicon glyphicon-arrow-left text-center "></span>
+            
+            <p>
+                
+                <input class="btn btn-default btn-lg" type="button" value="11" onclick="toggleClass(this)">
+                <input class="btn btn-default btn-lg" type="button" value="12" onclick="toggleClass(this)">
+                <input class="btn btn-default btn-lg" type="button" value="13" onclick="toggleClass(this)">
+                <input class="btn btn-default btn-lg" type="button" value="14" onclick="toggleClass(this)">
+                <input class="btn btn-default btn-lg" type="button" value="15" onclick="toggleClass(this)">
+                <input class="btn btn-default btn-lg" type="button" value="16" onclick="toggleClass(this)">
+                <input class="btn btn-default btn-lg" type="button" value="17" onclick="toggleClass(this)">
+                <input class="btn btn-default btn-lg" type="button" value="18" onclick="toggleClass(this)">
+                <input class="btn btn-default btn-lg" type="button" value="19" onclick="toggleClass(this)">
+                <input class="btn btn-default btn-lg" type="button" value="20" onclick="toggleClass(this)">
+
+            </p>
+
+
+
+            <p>
+                <input class="btn btn-default btn-lg" type="button" value="21" onclick="toggleClass(this)">
+                <input class="btn btn-default btn-lg" type="button" value="22" onclick="toggleClass(this)">
+                <input class="btn btn-default btn-lg" type="button" value="23" onclick="toggleClass(this)">
+                <input class="btn btn-default btn-lg" type="button" value="24" onclick="toggleClass(this)">
+                <input class="btn btn-default btn-lg" type="button" value="25" onclick="toggleClass(this)">
+                <input class="btn btn-default btn-lg" type="button" value="26" onclick="toggleClass(this)">
+                <input class="btn btn-default btn-lg" type="button" value="27" onclick="toggleClass(this)">
+                <input class="btn btn-default btn-lg" type="button" value="28" onclick="toggleClass(this)">
+                <input class="btn btn-default btn-lg" type="button" value="29" onclick="toggleClass(this)">
+                <input class="btn btn-default btn-lg" type="button" value="30" onclick="toggleClass(this)">
+
+            </p>
+            <span class="setor">Sector C</span>
+            <span class="glyphicon glyphicon-arrow-right text-center "></span><br />
+            <span class="glyphicon glyphicon-arrow-left text-center "></span>
+            
+            
+            @*<h4>Sector C</h4>*@
+        </div>
+
+        <div class="col-md-10 alert alert-success" role="alert">
+
+            <p>
+                <input class="btn btn-default btn-lg" type="button" value="41" onclick="toggleClass(this)">
+                <input class="btn btn-default btn-lg" type="button" value="42" onclick="toggleClass(this)">
+                <input class="btn btn-success btn-lg" type="button" value="43" onclick="toggleClass(this)">
+                <input class="btn btn-danger btn-lg" type="button" value="44" >
+                <input class="btn btn-danger btn-lg" type="button" value="45" >
+                <input class="btn btn-success btn-lg" type="button" value="46" onclick="toggleClass(this)">
+                <input class="btn btn-warning btn-lg" type="button" value="47" onclick="toggleClass(this)">
+                <input class="btn btn-success btn-lg" type="button" value="48" onclick="toggleClass(this)">
+                <input class="btn btn-success btn-lg" type="button" value="49" onclick="toggleClass(this)">
+                <input class="btn btn-success btn-lg" type="button" value="50" onclick="toggleClass(this)">
+
+            </p>
+            <span class="setor">Sector D</span>
+            <span class="glyphicon glyphicon-arrow-right text-center "></span><br />
+           
+          
+            @*<h4>Sector D</h4>*@
+        </div>
+    </div>
+    <div class="col col-md-3 alert alert-success clearfix" role="alert">
+        <span class="setor">Subtitle</span><br /><br>
+        <p>
+        <input class="btn btn-default btn-lg" type="button" value="#"><span>  Available </span><br /><br />
+        <input class="btn btn-success btn-lg" type="button" value="#"><span>  Using </span><br /><br />
+        <input class="btn btn-warning btn-lg" type="button" value="#"><span>  In Process </span><br /><br />
+        <input class="btn btn-danger btn-lg" type="button" value="#"><span>   Blocked </span><br />
+        </p>
+    </div>
+   </div>
+    <div class="row">
+        <h2>Second Floor</h2>
+        <div class="col col-md-8">
+            <div class="col-md-10 alert alert-success" role="alert">
+                @* <h4>Setor A</h4>*@
+                <p>
+                    <input class="btn btn-success btn-lg" type="button" value="01" onclick="toggleClass(this)">
+                    <input class="btn btn-warning btn-lg" type="button" value="02" onclick="toggleClass(this)">
+                    <input class="btn btn-danger btn-lg" type="button" value="03">
+                    <input class="btn btn-default btn-lg" type="button" value="04" onclick="toggleClass(this)">
+                    <input class="btn btn-default btn-lg" type="button" value="05" onclick="toggleClass(this)">
+                    <input class="btn btn-default btn-lg" type="button" value="06" onclick="toggleClass(this)">
+                    <input class="btn btn-default btn-lg" type="button" value="07" onclick="toggleClass(this)">
+                    <input class="btn btn-default btn-lg" type="button" value="08" onclick="toggleClass(this)">
+                    <input class="btn btn-default btn-lg" type="button" value="09" onclick="toggleClass(this)">
+                    <input class="btn btn-default btn-lg" type="button" value="10" onclick="toggleClass(this)">
+
+                </p>
+                <span class="setor">Setor A</span>
+                <span class="glyphicon glyphicon-arrow-right text-center "></span>
+
+            </div>
+
+            <div class="col-md-10 alert alert-success" role="alert">
+                @*<h4>Setor B</h4>*@
+                <span class="setor">Setor B</span>
+                <span class="glyphicon glyphicon-arrow-right text-center "></span><br />
+                <span class="glyphicon glyphicon-arrow-left text-center "></span>
+
+                <p>
+
+                    <input class="btn btn-default btn-lg" type="button" value="11" onclick="toggleClass(this)">
+                    <input class="btn btn-default btn-lg" type="button" value="12" onclick="toggleClass(this)">
+                    <input class="btn btn-default btn-lg" type="button" value="13" onclick="toggleClass(this)">
+                    <input class="btn btn-default btn-lg" type="button" value="14" onclick="toggleClass(this)">
+                    <input class="btn btn-default btn-lg" type="button" value="15" onclick="toggleClass(this)">
+                    <input class="btn btn-default btn-lg" type="button" value="16" onclick="toggleClass(this)">
+                    <input class="btn btn-default btn-lg" type="button" value="17" onclick="toggleClass(this)">
+                    <input class="btn btn-default btn-lg" type="button" value="18" onclick="toggleClass(this)">
+                    <input class="btn btn-default btn-lg" type="button" value="19" onclick="toggleClass(this)">
+                    <input class="btn btn-default btn-lg" type="button" value="20" onclick="toggleClass(this)">
+
+                </p>
+
+
+
+                <p>
+                    <input class="btn btn-default btn-lg" type="button" value="21" onclick="toggleClass(this)">
+                    <input class="btn btn-default btn-lg" type="button" value="22" onclick="toggleClass(this)">
+                    <input class="btn btn-default btn-lg" type="button" value="23" onclick="toggleClass(this)">
+                    <input class="btn btn-default btn-lg" type="button" value="24" onclick="toggleClass(this)">
+                    <input class="btn btn-default btn-lg" type="button" value="25" onclick="toggleClass(this)">
+                    <input class="btn btn-default btn-lg" type="button" value="26" onclick="toggleClass(this)">
+                    <input class="btn btn-default btn-lg" type="button" value="27" onclick="toggleClass(this)">
+                    <input class="btn btn-default btn-lg" type="button" value="28" onclick="toggleClass(this)">
+                    <input class="btn btn-default btn-lg" type="button" value="29" onclick="toggleClass(this)">
+                    <input class="btn btn-default btn-lg" type="button" value="30" onclick="toggleClass(this)">
+
+                </p>
+                <span class="setor">Setor C</span>
+                <span class="glyphicon glyphicon-arrow-right text-center "></span><br />
+                <span class="glyphicon glyphicon-arrow-left text-center "></span>
+
+
+                @*<h4>Setor C</h4>*@
+            </div>
+
+            <div class="col-md-10 alert alert-success" role="alert">
+
+                <p>
+                    <input class="btn btn-default btn-lg" type="button" value="41" onclick="toggleClass(this)">
+                    <input class="btn btn-default btn-lg" type="button" value="42" onclick="toggleClass(this)">
+                    <input class="btn btn-success btn-lg" type="button" value="43" onclick="toggleClass(this)">
+                    <input class="btn btn-danger btn-lg" type="button" value="44">
+                    <input class="btn btn-danger btn-lg" type="button" value="45">
+                    <input class="btn btn-success btn-lg" type="button" value="46" onclick="toggleClass(this)">
+                    <input class="btn btn-warning btn-lg" type="button" value="47" onclick="toggleClass(this)">
+                    <input class="btn btn-success btn-lg" type="button" value="48" onclick="toggleClass(this)">
+                    <input class="btn btn-success btn-lg" type="button" value="49" onclick="toggleClass(this)">
+                    <input class="btn btn-success btn-lg" type="button" value="50" onclick="toggleClass(this)">
+
+                </p>
+                <span class="setor">Setor D</span>
+                <span class="glyphicon glyphicon-arrow-right text-center "></span><br />
+
+
+                @*<h4>Setor D</h4>*@
+            </div>
+        </div>
+    </div>
